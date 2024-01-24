@@ -6,6 +6,7 @@ import MainHPComponent from '../components/MainHPComponent';
 import NavBottomComponent from '../components/NavBottomComponent';
 import { setSearchResults } from '../actions/actions';
 import axios from 'axios';
+import { Helmet } from 'react-helmet'
 
 const HomePage = ({ setSearchResults }) => {
   
@@ -30,6 +31,9 @@ const HomePage = ({ setSearchResults }) => {
 
   return (
     <>
+    <Helmet>
+        <title>Spotify</title>
+      </Helmet>
       <Container fluid>
         <Row>
           <SideBarComponent />

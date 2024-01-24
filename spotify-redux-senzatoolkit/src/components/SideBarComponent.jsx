@@ -89,6 +89,7 @@ const SideBarComponent = ({ setSearchResults }) => {
                         type="button"
                         id="button-addon1"
                         onClick={handleSearch}
+                        style={{height: '3em'}}
                       >
                         GO
                       </Button>
@@ -103,8 +104,10 @@ const SideBarComponent = ({ setSearchResults }) => {
         <div className="nav-btn">
           <Button variant='light' className='signup-btn rounded-5'>Sign Up</Button>
           <Button variant='dark' className='login-btn rounded-5'>Login</Button>
-          <a href="#">Cookie Policy</a> |
-          <a href="#"> Privacy</a>
+          <div>
+            <a href="#">Cookie Policy</a> |
+            <a href="#"> Privacy</a>
+          </div>
         </div>
       </Nav>
     </Col>

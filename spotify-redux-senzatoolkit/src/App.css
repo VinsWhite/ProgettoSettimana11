@@ -1,11 +1,5 @@
-body {
-  background: rgb(46, 63, 87);
-  background: linear-gradient(
-    90deg,
-    rgb(63, 86, 119) 0%,
-    rgba(33, 44, 61, 1) 42%,
-    rgb(15, 21, 29) 100%
-  );
+#root {
+  background: #121212;
 }
 
 /*SIDEBAR SECTION*/
@@ -20,6 +14,7 @@ body {
   align-items: flex-start;
   background-color: black;
   z-index: 1200;
+  padding: 0 2em 0 1em;
 }
 
 .navbar.fixed-left .navbar-collapse .navbar-nav a {
@@ -39,12 +34,14 @@ body {
 
 ul {
   list-style-type: none;
-  padding-left: 3px;
+  padding-left: 0em !important;
 }
 
 .nav-btn {
   margin-bottom: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-btn a {
@@ -94,8 +91,8 @@ ul {
 }
 
 .playerControls .row {
-  display: flex;
-  justify-content: space-between;
+  width: 100vh;
+  display: inline-block;
 }
 
 .playerControls a img {
@@ -110,9 +107,8 @@ ul {
 }
 
 .progress {
-  color: white;
-  background-color: #414141;
-  height: 3px;
+  background-color: #676767;
+  height: 0.3em !important;
 }
 
 .playBar p {
@@ -229,4 +225,27 @@ ul {
 
 .mainPage img {
   width: 200px;
+}
+
+/*not found page*/
+
+.notfoundpageStyle {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.notfoundpageStyle img {
+  width: 4em;
+  margin: 1em 0;
+}
+
+.notfoundpageStyle a {
+  text-decoration: none;
+}
+
+.notfoundpageStyle a:hover {
+  text-decoration: underline;
 }
